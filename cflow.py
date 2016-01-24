@@ -14,7 +14,7 @@ import getopt
 def commandExecute(ip,port,platform_dir,image_name,tftp_server_ip,tftp_server_path,file_name):
 
 	try:
-		'''
+		
 		print "PESPECT"
 		print 'telnet ' +ip+' '+port
 		child= pexpect.spawn('telnet ' +ip+' '+port)	
@@ -74,7 +74,7 @@ def commandExecute(ip,port,platform_dir,image_name,tftp_server_ip,tftp_server_pa
 		
 			
 		child.close()
-		'''
+		
 ## switch over		
 		print 'cp /' + tftp_server_path + '/' + file_name + ' .'		
 		os.system('cp /' + tftp_server_path + '/' + file_name + ' .')
